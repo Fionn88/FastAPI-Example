@@ -11,8 +11,8 @@ from linebot.models import (
 )
 
 # Line Bot config
-accessToken = "0wBRFXP0oNcwOfxRjhVuOKY8VQvN7vpxM8MkQ2ghSMYj0eU6ZX/PtP56+plxwultEgH//ghIf8k/ZlKQLIXIoh6D3ZNo8lSiSIS7ZBDaQpjMPir3hdqxNcjqMrBE5ZaUYG0WIhLKdBXcSEgzfWd7bwdB04t89/1O/w1cDnyilFU="
-secret = "4dc4dbdf9735525dd8b9aef5f86a415d"
+accessToken = "your access token to line bot which get from line biz"
+secret = "your secret token to access line bot webhook get from line developer"
 
 app = FastAPI()
 
