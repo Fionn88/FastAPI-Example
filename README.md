@@ -4,58 +4,23 @@
 
 This Project Is Practice FastAPI Framework
 
-#### Installing virtualenv
-- Windows
-```
-py -m pip install --user virtualenv
-```
-- Unix/macOS
-```
-pip install --user virtualenv
-```
-
-#### Creating a virtual environment
-- Windows
-```
-py -m venv MyFastAPI
-```
-- Unix/macOS
-```
-python3 -m venv MyFastAPI
-```
-
-#### Activating a virtual environment
-- Unix/macOS
-```
-source MyFastAPI/bin/activate
-```
-- Windows
-```
-.\MyFastAPI\Scripts\activate
-```
-
-#### Install Requirements
-- Unix/macOS
-```
-pip install -r requirements.txt
-```
-- Windows
-```
-py -m pip install -r requirements.txt
-```
-
 
 #### Getting Started
 
-- uvicorn {File Name}:{You Declare The FastAPI} --reload
+- Enter Project Directory
 ```
-uvicorn app:app --reload
+poetry install
+```
+
+- poetry run uvicorn {File Name}:{You Declare The FastAPI} --reload
+```
+poetry run uvicorn app:app --reload
 ```
 
 
 ## TODO
 
-- [ ] communicateWithDB：Filter DB 資料，如沒有資料會噴 500 Internal Error，應回覆 Json
+- [ ] communicate_with_db：Filter DB 資料，如沒有資料會噴 500 Internal Error，應回覆 Json
 
 
 
