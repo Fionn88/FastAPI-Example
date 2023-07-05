@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "migrate-with-db"
+version = "0.1.0"
+description = ""
+authors = ["FionnKuo"]
+readme = "README.md"
+packages = [{include = "migrate_with_db"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+anyio = "3.7.0"
+click = "8.1.3"
+fastapi = "0.98.0"
+greenlet = "2.0.2"
+h11 = "0.14.0"
+idna = "3.4"
+jinja2 = "3.1.2"
+markupsafe = "2.1.3"
+mysql-connector-python = "8.0.33"
+protobuf = "3.20.3"
+pydantic = "1.10.9"
+python-multipart = "0.0.6"
+sniffio = "1.3.0"
+sqlalchemy = "2.0.17"
+starlette = "0.27.0"
+typing-extensions = "4.6.3"
+uvicorn = "0.22.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
