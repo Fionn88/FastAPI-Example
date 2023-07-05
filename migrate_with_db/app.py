@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-import models, schemas
+import models
 from database import SessionLocal, engine
 
 models.Base.metadata.create_all(bind=engine)
@@ -19,7 +19,7 @@ def get_db():
 @app.post("/users/")
 def create_user(name: str, email: str):
     db = SessionLocal()
-    user = schemas.User(name=name, email=email)
+    user = models.User(name=name, email=email)
     db.add(user)
     db.commit()
     db.refresh(user)
